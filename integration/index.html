@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <!-- =======================
+       Nithin Narayanan · Portfolio
+       How to edit:
+       - Change text marked with 🔧 below
+       - Update links in the RESUME & PROJECTS sections
+       - Optional: connect the contact form (see comments in Contact section)
+     ======================= -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nithin Narayanan · Portfolio</title>
+  <meta name="description" content="Portfolio of Nithin Narayanan — Engineering Management, Supply Chain, and Data Analytics projects." />
+  <meta name="keywords" content="Nithin Narayanan, portfolio, data analytics, supply chain, engineering management, Power BI, SQL, Python" />
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Nithin Narayanan · Portfolio" />
+  <meta property="og:description" content="Engineering Management graduate specializing in Supply Chain & Data Analytics." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og-image.png" />
+  <meta property="og:url" content="https://example.com/" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Nithin Narayanan · Portfolio" />
+  <meta name="twitter:description" content="Engineering Management graduate specializing in Supply Chain & Data Analytics." />
+  <meta name="twitter:image" content="assets/og-image.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind via CDN (no build step needed) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          colors: {
+            brand: { DEFAULT: '#0ea5e9', dark: '#0284c7' }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom tweaks -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-slate-800">
+  <!-- ======================= NAVBAR ======================= -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+    <nav class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#home" class="font-semibold tracking-tight text-lg">Nithin <span class="text-brand">Narayanan</span></a>
+      <button id="mobileMenuBtn" class="md:hidden rounded-lg border px-2 py-1 border-slate-300" aria-label="Toggle menu">☰</button>
+      <ul id="navLinks" class="hidden md:flex items-center gap-6 text-sm">
+        <li><a href="#about" class="hover:text-brand">About</a></li>
+        <li><a href="#skills" class="hover:text-brand">Skills</a></li>
+        <li><a href="#certifications" class="hover:text-brand">Certifications</a></li>
+        <li><a href="#projects" class="hover:text-brand">Projects</a></li>
+        <li><a href="#resume" class="hover:text-brand">Resume</a></li>
+        <li><a href="#contact" class="hover:text-brand">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-3 flex flex-col gap-2 text-sm">
+        <a href="#about" class="hover:text-brand">About</a>
+        <a href="#skills" class="hover:text-brand">Skills</a>
+        <a href="#projects" class="hover:text-brand">Projects</a>
+        <a href="#resume" class="hover:text-brand">Resume</a>
+        <a href="#contact" class="hover:text-brand">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="home" class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <!-- ======================= HOME / ABOUT ======================= -->
+    <section id="about" class="grid lg:grid-cols-3 gap-10 items-center pt-14 pb-12">
+      <div class="lg:col-span-2">
+        <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">Engineering Management × Supply Chain × <span class="text-brand">Data Analytics</span></h1>
+
+        <!-- 🔧 Edit this short bio -->
+        <p class="mt-4 text-base leading-relaxed text-slate-600">
+          Hi, I’m <strong class="text-slate-900">Nithin Narayanan</strong> — MSc in Engineering Management (University of Greenwich, London) with a strong background in supply chain operations, procurement, and process improvement. My experience spans IT systems, data analytics, and cloud technologies, with hands-on expertise in SQL, Power BI, Excel, and process optimization through Lean Six Sigma and Agile practices. Passionate about building a career in procurement and supply chain management, I bring the ability to analyze data, streamline operations, and strengthen supplier relationships. I am motivated to contribute to business growth and operational excellence, particularly in dynamic and fast-paced market.
+        </p>
+
+        <div class="mt-6 flex flex-wrap gap-3">
+          <!-- 🔧 Put your public resume link below in the href -->
+          <a id="resumeCtaTop" href="./docs/resume.pdf" class="inline-flex items-center gap-2 rounded-2xl bg-brand px-4 py-2 text-white shadow-sm hover:bg-brand-dark transition">View Resume</a>
+          <a href="#projects" class="inline-flex items-center gap-2 rounded-2xl border border-slate-300 px-4 py-2 hover:bg-slate-50 transition">See Projects</a>
+        </div>
+        <p class="mt-3 text-xs text-slate-500" id="lastUpdated"></p>
+      </div>
+
+      <!-- 🔧 Replace the image source with your own (put an image in /assets/me.jpg OR use a public https image) -->
+      <div class="lg:justify-self-end">
+        <div class="w-40 h-40 sm:w-48 sm:h-48 rounded-3xl overflow-hidden ring-1 ring-slate-200 shadow">
+          <img src="assets/me.jpg" alt="Nithin Narayanan" class="w-full h-full object-contain bg-slate-100" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= SKILLS ======================= -->
+    <section id="skills" class="py-10 border-t border-slate-200">
+      <h2 class="text-2xl font-semibold tracking-tight">Skills</h2>
+      <!-- 🔧 Add/remove skills as needed -->
+      <ul class="mt-6 flex flex-wrap gap-2 text-sm">
+        <li class="badge">Data Analytics</li>
+        <li class="badge">Supply Chain Management</li>
+        <li class="badge">AWS</li>
+        <li class="badge">GCP</li>
+        <li class="badge">SQL</li>
+        <li class="badge">Power BI</li>
+        <li class="badge">Python</li>
+        <li class="badge">Project Management</li>
+        <li class="badge">Lean Six Sigma</li>
+      </ul>
+    </section>
+
+<!-- ===== Certifications ===== -->
+<section id="certifications" class="py-10 border-t border-slate-200 dark:border-slate-800">
+  <h2 class="text-2xl font-semibold tracking-tight">Certifications</h2>
+  <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">
+    Selected credentials that complement my data & supply chain focus.
+  </p>
+
+  <ul class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <!-- Six Sigma -->
+    <li class="rounded-2xl border border-slate-200 p-4">
+      <div class="flex items-center justify-between">
+        <span class="font-medium">Lean Six Sigma (Green Belt)</span>
+        <span class="badge">Process</span>
+      </div>
+      <p class="mt-2 text-sm text-slate-600">Process improvement & quality tools (DMAIC, waste reduction, root cause).</p>
+      <div class="mt-3 flex gap-2">
+        <a class="btn-outline" href="docs/sixsigma.pdf" target="_blank" rel="noopener">View</a>
+        <a class="btn-link" href="docs/sixsigma.pdf" download>Download</a>
+      </div>
+    </li>
+
+    <!-- Big Data / Analytics -->
+    <li class="rounded-2xl border border-slate-200 p-4">
+      <div class="flex items-center justify-between">
+        <span class="font-medium">Big Data & Analytics</span>
+        <span class="badge">Analytics</span>
+      </div>
+      <p class="mt-2 text-sm text-slate-600">Data platforms & analytical methods for scalable insights.</p>
+      <div class="mt-3 flex gap-2">
+        <a class="btn-outline" href="docs/bigdata.pdf" target="_blank" rel="noopener">View</a>
+        <a class="btn-link" href="docs/bigdata.pdf" download>Download</a>
+      </div>
+    </li>
+
+    <!-- Masters -->
+    <li class="rounded-2xl border border-slate-200 p-4">
+      <div class="flex items-center justify-between">
+        <span class="font-medium">MSc Engineering Management</span>
+        <span class="badge">Education</span>
+      </div>
+      <p class="mt-2 text-sm text-slate-600">University of Greenwich — engineering leadership, ops & analytics.</p>
+      <div class="mt-3 flex gap-2">
+        <a class="btn-outline" href="docs/masters.pdf" target="_blank" rel="noopener">View</a>
+        <a class="btn-link" href="docs/masters.pdf" download>Download</a>
+      </div>
+    </li>
+  </ul>
+</section>
+
+    <!-- ======================= PROJECTS ======================= -->
+    <!-- ======================= PROJECTS ======================= -->
+<section id="projects" class="py-12 border-t border-slate-200">
+  <h2 class="text-2xl font-semibold tracking-tight">Projects</h2>
+  <p class="mt-2 text-sm text-slate-600">Selected work, reports, and documentation.</p>
+
+  <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- ===== MSc Dissertation ===== -->
+    <article class="rounded-2xl border border-slate-200 overflow-hidden bg-white">
+      <img
+        src="assets/image/dissertation_thumb.jpg"
+        alt="Thumbnail for MSc Dissertation"
+        class="h-40 w-full object-cover">
+      <div class="p-5">
+        <h3 class="text-lg font-semibold">MSc Dissertation</h3>
+        <p class="mt-1 text-sm text-slate-600">
+           Knowledge Discovery to support Big Data Analytics in Manufacturing
+        </p>
+        <ul class="mt-3 flex flex-wrap gap-2 text-xs text-slate-600">
+          <li class="rounded-full bg-slate-100 px-2 py-1">Big Data </li>
+          <li class="rounded-full bg-slate-100 px-2 py-1">Data Analysis</li>
+          <li class="rounded-full bg-slate-100 px-2 py-1">Visualization</li>
+        </ul>
+
+        <div class="mt-4 flex flex-wrap gap-3">
+          <!-- View report (Google Drive PDF) -->
+          <a
+            href="https://drive.google.com/uc?export=view&id=FILE_ID_DISSERTATION_PDF"
+            target="_blank" rel="noopener"
+            class="btn">View Report</a>
+
+          <!-- Download report -->
+          <a
+            href="https://drive.google.com/uc?export=download&id=FILE_ID_DISSERTATION_PDF"
+            class="btn-outline">Download PDF</a>
+
+          <!-- Key Summary (Google Doc or PDF) -->
+          <a
+            href="https://docs.google.com/document/d/FILE_ID_DISSERTATION_SUMMARY/preview"
+            target="_blank" rel="noopener"
+            class="btn-outline">Key Summary</a>
+          <!-- If your summary is a PDF instead, use:
+          https://drive.google.com/uc?export=view&id=FILE_ID_DISSERTATION_SUMMARY_PDF
+          -->
+        </div>
+
+        <!-- Optional inline preview of the report -->
+        <details class="mt-4 group">
+          <summary class="cursor-pointer text-sm text-slate-700 hover:underline">
+            Quick Preview (inline)
+          </summary>
+          <div class="mt-3 rounded-xl border border-slate-200 overflow-hidden">
+            <iframe
+              src="https://drive.google.com/file/d/FILE_ID_DISSERTATION_PDF/preview"
+              width="100%" height="420" allow="autoplay"></iframe>
+          </div>
+        </details>
+      </div>
+    </article>
+
+    <!-- ===== GE Aerospace — Forage ===== -->
+    <article class="rounded-2xl border border-slate-200 overflow-hidden bg-white">
+      <img
+        src="assets/image/ge_forage_thumb.jpg"
+        alt="Thumbnail for GE Aerospace Forage project"
+        class="h-40 w-full object-cover">
+      <div class="p-5">
+        <h3 class="text-lg font-semibold">GE Aerospace — Virtual Experience (Forage)</h3>
+        <p class="mt-1 text-sm text-slate-600">
+          The tasks revolved around realistic shop-floor problems such as fixture design and defect disposition of turbine blades.
+        </p>
+        <ul class="mt-3 flex flex-wrap gap-2 text-xs text-slate-600">
+          <li class="rounded-full bg-slate-100 px-2 py-1">Process Mapping</li>
+          <li class="rounded-full bg-slate-100 px-2 py-1">Root Cause (Fishbone)</li>
+          <li class="rounded-full bg-slate-100 px-2 py-1">Documentation</li>
+        </ul>
+
+        <div class="mt-4 flex flex-wrap gap-3">
+          <!-- Documentation (Google Doc or PDF) -->
+          <a
+            href="https://docs.google.com/document/d/1wxOsetH6eRQghdTWwEIUNZ7ygSozDTjD/preview"
+            target="_blank" rel="noopener"
+            class="btn">Read Documentation</a>
+          <!-- If PDF:
+          https://drive.google.com/uc?export=view&id=FILE_ID_GE_DOC_PDF
+          -->
+
+          <!-- Tasks/Artifacts bundle (Drive folder or PDF) -->
+          <a
+            href="https://drive.google.com/drive/folders/1K0U3FxgxHf4QValYTnefr16SXiYGDXrA?usp=sharing"
+            target="_blank" rel="noopener"
+            class="btn-outline">View Tasks</a>
+        </div>
+
+        <!-- Optional inline preview of documentation -->
+        <details class="mt-4 group">
+          <summary class="cursor-pointer text-sm text-slate-700 hover:underline">
+            Quick Preview (inline)
+          </summary>
+          <div class="mt-3 rounded-xl border border-slate-200 overflow-hidden">
+            <iframe
+              src="https://docs.google.com/document/d/1wxOsetH6eRQghdTWwEIUNZ7ygSozDTjD/preview"
+              width="100%" height="420"></iframe>
+          </div>
+        </details>
+      </div>
+    </article>
+
+    <!-- You can keep your existing cards here... -->
+  </div>
+
+  <!-- <p class="mt-4 text-xs text-slate-500">
+    Google Drive tips: set sharing to <strong>Anyone with the link → Viewer</strong>.
+    Use <code>uc?export=view|download&amp;id=FILE_ID</code> for PDFs or
+    <code>/document/d/FILE_ID/preview</code> for Google Docs preview.
+  </p> -->
+</section>
+ <!-- You can keep your existing cards here... -->
+<section id="projects" class="py-10 border-t border-slate-200">
+      <div class="flex items-baseline justify-between gap-4">
+        <h2 class="text-2xl font-semibold tracking-tight">Projects</h2>
+        <div class="flex items-center gap-2 text-xs">
+          <label for="tagFilter" class="sr-only">Filter by tag</label>
+          <select id="tagFilter" class="rounded-xl border border-slate-300 bg-white px-3 py-2">
+            <option value="">All tags</option>
+            <option>Power BI</option>
+            <option>SQL</option>
+            <option>Python</option>
+            <option>Supply Chain</option>
+            <option>Forecasting</option>
+            <option>Machine Learning</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- 🔧 Replace images/links with your own -->
+      <div id="projectsGrid" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Project 1 -->
+        <article class="card reveal" data-tags="Python,SQL,Supply Chain,Forecasting">
+          <div class="card-img" style="background:#e4eee8;display:flex;align-items:center;padding:24px;color:#006d65;font-size:28px;font-weight:700">Inventory Analytics<br>60 SKUs · 3 Stores</div>
+          <div class="p-5"><h3 class="font-semibold">Tesco-Inspired Inventory Optimisation</h3>
+          <p class="mt-2 text-sm text-slate-600">Independent synthetic-data case study using Python and SQL. Daily replenishment reduced average simulated inventory by 14.9% versus a simple weekly baseline, with higher order frequency.</p>
+          <p class="mt-2 text-xs text-slate-600">Not affiliated with Tesco. Results are simulated.</p>
+          <div class="actions"><a class="btn-link" href="projects/tesco/case-study.html">View Case Study</a><a class="btn-link" href="projects/tesco/index.html">Live Dashboard</a><a class="btn-link" href="https://github.com/itsnithinn/tesco-inventory-optimization" target="_blank" rel="noopener">GitHub Repository</a></div></div></article>
+
+        <!-- Project 2 -->
+        <article class="card reveal" data-tags="Power BI,Data Viz">
+          <img class="card-img" src="assets/image/rim.jpg" alt="Retail sales dashboard preview">
+          <div class="p-5">
+            <h3 class="font-semibold">Retail Sales Dashboard (Power BI)</h3>
+            <p class="mt-2 text-sm text-slate-600">Interactive KPI view of revenue, margin, and basket metrics with DAX measures and drill-through for product/category insights.</p>
+            <div class="actions">
+              <a class="btn-link" href="https://github.com/your-handle/retail-sales-dashboard" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn-link" href="https://drive.google.com/" target="_blank" rel="noopener">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="card reveal" data-tags="Python,SQL,Machine Learning">
+          <img class="card-img" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop" alt="Churn analysis notebook preview">
+          <div class="p-5">
+            <h3 class="font-semibold">Customer Churn Analysis (SQL + Python)</h3>
+            <p class="mt-2 text-sm text-slate-600">Feature-engineered churn signals and trained a logistic regression baseline; improved recall on high-risk users by 18%.</p>
+            <div class="actions">
+              <a class="btn-link" href="https://github.com/your-handle/churn-analysis" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn-link" href="https://drive.google.com/" target="_blank" rel="noopener">Notebook</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================= RESUME ======================= -->
+    <section id="resume" class="py-10 border-t border-slate-200">
+      <h2 class="text-2xl font-semibold tracking-tight">Resume</h2>
+      <p class="mt-2 text-sm text-slate-600">View or download my latest CV.</p>
+      <!-- 🔧 Put your public Google Drive link (set to “Anyone with the link”) or host resume.pdf in the repo root -->
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a id="resumeView" href="https://drive.google.com/uc?export=view&id=168vEjkx_tF8tA0NlV1jE3zQ3enxs4ExO" target="_blank" rel="noopener" class="btn">View Resume</a>
+        <a id="resumeDownload" href="https://drive.google.com/uc?export=download&id=168vEjkx_tF8tA0NlV1jE3zQ3enxs4ExO" class="btn-outline">Download PDF</a>
+      </div>
+      <p class="mt-3 text-xs text-slate-500">Tip: If using Google Drive, use a direct view link:
+        <code>https://drive.google.com/uc?export=download&id=168vEjkx_tF8tA0NlV1jE3zQ3enxs4ExO</code>
+      </p>
+    </section>
+
+    <!-- ======================= CONTACT ======================= -->
+    <section id="contact" class="py-10 border-t border-slate-200">
+      <h2 class="text-2xl font-semibold tracking-tight">Contact</h2>
+      <p class="mt-2 text-sm text-slate-600"> Send me a message.</p>
+
+      <!-- Netlify Forms support: data-netlify + hidden form-name -->
+      <!-- Formspree support: replace FORM_ACTION with your Formspree endpoint -->
+      <form
+        id="contactForm"
+        name="contact"
+        method="POST"
+        class="mt-6 grid gap-4 max-w-xl"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        action=""
+      >
+        <!-- required by Netlify Forms -->
+        <input type="hidden" name="form-name" value="contact" />
+        <!-- honeypot (keeps bots away) -->
+        <p class="hidden">
+          <label>Don’t fill this out: <input name="bot-field" /></label>
+        </p>
+
+        <div>
+          <label for="name" class="label">Name</label>
+          <input id="name" name="name" type="text" class="input" placeholder="Your name" required />
+        </div>
+
+        <div>
+          <label for="email" class="label">Email</label>
+          <input id="email" name="email" type="email" class="input" placeholder="you@example.com" required />
+        </div>
+
+        <div>
+          <label for="message" class="label">Message</label>
+          <textarea id="message" name="message" rows="5" class="input" placeholder="How can I help?" required></textarea>
+        </div>
+
+        <button class="btn" type="submit">Send Message</button>
+
+        <!-- success & error messages -->
+        <p id="formSuccess" class="hidden text-green-600 text-sm">Thanks! Your message has been sent.</p>
+        <p id="formError" class="hidden text-red-600 text-sm">Oops, something went wrong. Please try again or email me at <a href="mailto:itsnithinn@gmail.com" class="underline">itsnithinn@gmail.com</a>.</p>
+
+        <!-- 🔧 If hosting on GitHub Pages: set a Formspree endpoint in script.js (FORMSPREE_ENDPOINT) -->
+      </form>
+    </section>
+  </main>
+
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="border-t border-slate-200 py-8 mt-8">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 text-xs text-slate-500 flex flex-wrap items-center justify-between gap-2">
+      <span>© <span id="copyrightYear"></span> Nithin Narayanan</span>
+      <span>Built with HTML + Tailwind. Fast & lightweight.</span>
+    </div>
+  </footer>
+
+  <!-- Structured data (SEO) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nithin Narayanan",
+      "jobTitle": "Data Analytics & Supply Chain",
+      "email": "mailto:itsnithinn@gmail.com",
+      "url": "https://example.com/",
+      "sameAs": [
+        "https://www.linkedin.com/in/your-handle",
+        "https://github.com/your-handle"
+      ],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Greenwich"
+      },
+      "knowsAbout": ["Data Analytics","Supply Chain","SQL","Power BI","Python","AWS","GCP","Project Management","Lean Six Sigma"]
+    }
+  </script>
+
+  <!-- Main script -->
+  <script src="script.js"></script>
+</body>
+</html>

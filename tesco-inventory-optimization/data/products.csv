@@ -1,0 +1,61 @@
+sku,name,category,shelf_life,unit_cost,price,base_demand,nominal_lead
+SKU001,Milk Standard,Dairy,7,3.9,5.38,10.84,1
+SKU002,Yoghurt Standard,Dairy,7,4.12,5.69,14.62,2
+SKU003,Cheese Standard,Dairy,7,4.68,6.46,11.03,1
+SKU004,Cream Standard,Dairy,7,1.35,1.86,5.11,2
+SKU005,Butter Standard,Dairy,7,5.68,7.84,5.94,1
+SKU006,Milk Family,Dairy,7,5.21,7.19,16.36,1
+SKU007,Yoghurt Family,Dairy,7,1.72,2.37,21.37,2
+SKU008,Cheese Family,Dairy,7,3.91,5.4,10.0,1
+SKU009,Cream Family,Dairy,7,3.64,5.02,16.58,1
+SKU010,Butter Family,Dairy,7,3.86,5.33,18.25,1
+SKU011,Bread Standard,Bakery,3,2.12,2.93,17.22,1
+SKU012,Rolls Standard,Bakery,3,5.93,8.18,18.98,1
+SKU013,Bagels Standard,Bakery,3,1.13,1.56,20.77,1
+SKU014,Croissants Standard,Bakery,3,0.87,1.2,9.1,1
+SKU015,Muffins Standard,Bakery,3,5.96,8.22,8.16,1
+SKU016,Bread Family,Bakery,3,4.4,6.07,18.26,1
+SKU017,Rolls Family,Bakery,3,1.03,1.42,6.27,2
+SKU018,Bagels Family,Bakery,3,0.82,1.13,15.32,1
+SKU019,Croissants Family,Bakery,3,2.24,3.09,13.06,2
+SKU020,Muffins Family,Bakery,3,3.89,5.37,9.84,1
+SKU021,Apples Standard,Produce,5,3.3,4.55,18.7,1
+SKU022,Bananas Standard,Produce,5,4.95,6.83,12.33,2
+SKU023,Tomatoes Standard,Produce,5,4.91,6.78,4.28,2
+SKU024,Salad Standard,Produce,5,1.97,2.72,12.43,1
+SKU025,Carrots Standard,Produce,5,2.6,3.59,17.76,1
+SKU026,Apples Family,Produce,5,2.68,3.7,21.58,2
+SKU027,Bananas Family,Produce,5,3.09,4.26,9.32,2
+SKU028,Tomatoes Family,Produce,5,3.84,5.3,19.06,2
+SKU029,Salad Family,Produce,5,1.21,1.67,20.22,2
+SKU030,Carrots Family,Produce,5,3.95,5.45,7.89,2
+SKU031,Water Standard,Beverages,180,5.77,7.96,9.45,3
+SKU032,Juice Standard,Beverages,180,4.81,6.64,15.95,4
+SKU033,Tea Standard,Beverages,180,2.53,3.49,8.73,5
+SKU034,Coffee Standard,Beverages,180,4.17,5.75,16.74,4
+SKU035,Cola Standard,Beverages,180,5.62,7.76,5.3,5
+SKU036,Water Family,Beverages,180,5.24,7.23,4.58,3
+SKU037,Juice Family,Beverages,180,5.58,7.7,6.75,4
+SKU038,Tea Family,Beverages,180,4.38,6.04,3.15,5
+SKU039,Coffee Family,Beverages,180,5.59,7.71,11.93,3
+SKU040,Cola Family,Beverages,180,1.7,2.35,10.8,2
+SKU041,Peas Standard,Frozen,180,1.57,2.17,13.87,5
+SKU042,Pizza Standard,Frozen,180,2.05,2.83,8.43,3
+SKU043,Fish Standard,Frozen,180,2.01,2.77,8.26,5
+SKU044,Chips Standard,Frozen,180,4.56,6.29,21.21,4
+SKU045,Ice cream Standard,Frozen,180,5.87,8.1,15.46,5
+SKU046,Peas Family,Frozen,180,0.96,1.32,21.28,5
+SKU047,Pizza Family,Frozen,180,1.6,2.21,10.28,3
+SKU048,Fish Family,Frozen,180,1.9,2.62,11.29,5
+SKU049,Chips Family,Frozen,180,1.68,2.32,9.77,5
+SKU050,Ice cream Family,Frozen,180,5.63,7.77,7.55,2
+SKU051,Detergent Standard,Household,730,3.3,4.55,6.95,2
+SKU052,Tissues Standard,Household,730,4.36,6.02,9.96,4
+SKU053,Soap Standard,Household,730,3.52,4.86,7.52,5
+SKU054,Bin bags Standard,Household,730,4.68,6.46,5.22,3
+SKU055,Sponges Standard,Household,730,3.42,4.72,16.56,4
+SKU056,Detergent Family,Household,730,4.82,6.65,12.67,2
+SKU057,Tissues Family,Household,730,3.24,4.47,7.62,3
+SKU058,Soap Family,Household,730,4.42,6.1,17.21,5
+SKU059,Bin bags Family,Household,730,2.4,3.31,16.0,4
+SKU060,Sponges Family,Household,730,4.78,6.6,4.43,5

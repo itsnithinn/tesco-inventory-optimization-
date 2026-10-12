@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "rows": 33120,
+  "demand_sha256": "a37bcb4ef2545d2165c45c95e37e1dfb97ed7abc1f715f134d6da9c4953340ab",
+  "checks": [
+    "mass balance",
+    "nonnegative inventory",
+    "sales constraints",
+    "equivalent initial stock and empty pipeline",
+    "dashboard reconciliation"
+  ]
+}

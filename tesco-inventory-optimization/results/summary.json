@@ -1,0 +1,36 @@
+{
+  "baseline": {
+    "days": 92,
+    "demand": 204003,
+    "sales": 170095,
+    "fill_rate": 0.833786758037872,
+    "lost_units": 33908,
+    "average_inventory": 32012.467500000002,
+    "holding_cost": 1613.7791835616442,
+    "waste_units": 58445,
+    "writeoff": 175044.11,
+    "orders": 2520,
+    "ordering_cost": 5040.0,
+    "lost_margin": 38571.55,
+    "total_cost": 220269.43918356166,
+    "annualized_turnover": 72.66115165843622,
+    "days_inventory": 5.023317022496191
+  },
+  "proposed": {
+    "days": 92,
+    "demand": 204003,
+    "sales": 203117,
+    "fill_rate": 0.9956569266138243,
+    "lost_units": 886,
+    "average_inventory": 27231.404782608697,
+    "holding_cost": 1372.7612273972604,
+    "waste_units": 7987,
+    "writeoff": 24173.820000000003,
+    "orders": 12027,
+    "ordering_cost": 24054.0,
+    "lost_margin": 1018.02,
+    "total_cost": 50618.60122739726,
+    "annualized_turnover": 99.82144109635819,
+    "days_inventory": 3.6565290581976617
+  }
+}
